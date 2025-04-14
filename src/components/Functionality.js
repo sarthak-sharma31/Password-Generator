@@ -18,8 +18,8 @@ export default function Functionality() {
   const changeValue = (step) => {
     setSliderValue((prev) => {
       const newValue = prev + step;
-      if (newValue >= 1 && newValue <= 50) return newValue;
       generatePass(newValue);
+      if (newValue >= 1 && newValue <= 50) return newValue;
       return prev;
     });
   };
@@ -33,7 +33,7 @@ export default function Functionality() {
 
   useEffect(() => {
     generatePass(sliderValue);
-  }, []);
+  }, [charOptions]);
 
   const generatePass = (value) => {
 

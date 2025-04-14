@@ -22,7 +22,6 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 35%;
-  border: 2px solid black;
 }
 
 .functionality {
@@ -262,14 +261,81 @@ input[type="range"]::-moz-range-thumb {
   .main-content {
     width: 100vw;
     flex-direction: column;
+    height: auto;
   }
-  .image{
+
+  .image {
     width: 80vw;
     margin: auto;
-    height: 200px;
+    height: 15rem;
+  }
+
+  .functionality {
+    margin: auto;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .pass{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .label-text{
+    width: auto;
+    margin: 1rem !important;
+  }
+
+  .section{
+    width: auto;
+    margin: 2rem auto;
+  }
+
+  .section div{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .section{
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .label-text{
+    margin: auto 2rem;
+  }
+
+  .slider-container{
+    width: 100%;
+  }
+
+  .circle-button {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
   }
 
   .functionality{
-    margin: auto;
+    margin: 0px;
+  }
+
+  .options-container{
+    flex-wrap: wrap;
+    width: auto !important;
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .circle-button {
+    width: 65px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .circle-button {
+    height: 50px;
+    width: 85px;
   }
 }
